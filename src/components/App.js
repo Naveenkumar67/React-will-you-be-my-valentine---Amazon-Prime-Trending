@@ -16,21 +16,30 @@ const App = ({slides}) => {
     {showText()}
     <button
     disabled={index==slides.length-1}
-    onClick={()=>setIndex(i+1)}
+    onClick={()=>{
+      let i=index;
+      i++;
+      setIndex(i)}}
     data-testid="button-next">
-      NEXT
+      Next
     </button>
     <button
     disabled={index==0}
-    onClick={()=>setIndex(i-1)}
+    onClick={()=>{
+      let i=index;
+      i--;
+      setIndex(i)}}
     data-testid="button-prev">
-      PREV
+      Prev
     </button>
     <button
     disabled={index==0}
-    onClick={()=>setIndex(0)}
+    onClick={()=>{
+      let i=index;
+      i=0;
+      setIndex(i)}}
     data-testid="button-next">
-      RESTART
+      Restart
     </button>
 
     </>
