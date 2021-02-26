@@ -38,7 +38,7 @@ const App = ({slides}) => {
       let i=index;
       i=0;
       setIndex(i)}}
-    data-testid="button-next">
+    data-testid="button-restart">
       Restart
     </button>
 
